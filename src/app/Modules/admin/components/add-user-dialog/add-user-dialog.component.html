@@ -1,0 +1,49 @@
+
+<mat-dialog-content>
+<form [formGroup]="addUserForm" (ngSubmit)="onAddUser()">
+    <mat-form-field appearance="fill">
+        <mat-label>Enter username</mat-label>
+        <input  matInput formControlName="name" />
+        <mat-error *ngIf="addUserFormControl['name'].errors?.['required']"
+        > username is Required</mat-error
+      >
+      </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Enter Email</mat-label>
+      <input  matInput formControlName="email"/>
+      <mat-error *ngIf="addUserFormControl['email'].errors?.['required']"
+        > Email is Required</mat-error
+      >
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Enter your password</mat-label>
+      <input
+      formControlName="password"
+        matInput
+        [type]="hide ? 'password' : 'text'"
+      />
+      <mat-error *ngIf="addUserFormControl['password'].errors?.['required']"
+      >password is Required</mat-error
+    >
+    
+      <button
+        mat-icon-button
+        matSuffix
+        (click)="hide = !hide"
+        [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide"
+>
+        <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+      </button>
+    </mat-form-field>
+    <mat-dialog-actions>
+        <button class="mat-raised-button" mat-dialog-close >Close</button>
+        <button type="submit" class="mat-raised-button mat-primary" style="margin-left:10px ;">Add</button>
+      </mat-dialog-actions>
+</form>
+</mat-dialog-content>
+   
+
+   
+ 

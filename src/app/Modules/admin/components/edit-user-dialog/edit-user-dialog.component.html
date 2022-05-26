@@ -1,0 +1,21 @@
+<h2 mat-dialog-title>Edit User Details</h2>
+<mat-dialog-content>
+  <form [formGroup]="editForm" >
+  <mat-form-field appearance="fill">
+    <mat-label>Edit username</mat-label>
+    <input matInput formControlName="name"/>
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Edit Email</mat-label>
+    <input matInput formControlName="email"/>
+  </mat-form-field>
+                                                                             
+</form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button class="mat-raised-button" mat-dialog-close >Close</button>
+  <button class="mat-raised-button mat-primary" style="margin-left:10px ;" (click)="updateUserDetails()">Edit</button>
+</mat-dialog-actions>   
+
+

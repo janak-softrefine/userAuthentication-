@@ -1,0 +1,26 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span class="menu-spacer"></span>
+      <div>
+        <div style="float:left;">
+        <a mat-button [routerLink]="'/admin'">
+          <mat-icon matSuffix>home</mat-icon><span>Home</span>
+        </a>
+        </div>
+
+      <div style="float:right;">
+        <a mat-button [routerLink]="'/admin'"> Hello {{ currentUserRole }} </a>
+  
+        <button [matMenuTriggerFor]="myprofile" mat-icon-button class="m-r-5 btn-header-right">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThPIWNxqYlgwcPj7JZDM_5pS7nf-Gy9ySNmD4WOLHd_YGhEILVR-DqzJ6FIEdbMw-dxoY&usqp=CAU" alt="not found" class="my-profile-pick" />
+        </button>
+    
+        <mat-menu #myprofile="matMenu" class="">
+          <button mat-menu-item routerLink="/admin/userProfile" ><mat-icon routerLink="/admin/userProfile">account_box</mat-icon> Profile</button>
+          <button mat-menu-item (click)="logout()"><mat-icon>exit_to_app</mat-icon> Sign Out</button>
+        </mat-menu>  
+
+      </div>  
+      </div>
+  </mat-toolbar-row>
+</mat-toolbar>

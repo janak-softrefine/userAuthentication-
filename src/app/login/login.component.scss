@@ -1,0 +1,51 @@
+:host {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0px;
+}
+
+mat-form-field {
+  width: 100%;
+  min-width: 200px;
+}
+.new-account{
+float: right;
+text-decoration: none;
+margin-top: 10px;
+}
+.mat-elevation-z8{
+  border-radius: 20px 20px 20px 20px
+
+}
+
+.icon-div{
+  display: flex;  
+      
+  justify-content: center;
+  
+}
+mat-icon {
+
+  font-size: 60px;
+
+}
+
+.card-title{
+  margin-top: 50px;
+  justify-content: center;
+  display: flex;  
+
+}
+mat-card-title,
+mat-card-content,
+mat-card-header {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}

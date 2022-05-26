@@ -1,0 +1,54 @@
+:host {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+  }
+  
+  mat-form-field {
+    width: 90%;
+    min-width: 200px;
+  }
+  
+  .mat-elevation-z8 {
+    border-radius: 20px 20px 20px 20px;
+  }
+  
+  .icon-div {
+    display: flex;
+    justify-content: center;
+  }
+  mat-icon {
+    font-size: 60px;
+  }
+  
+  .card-title {
+    margin-top: 50px;
+    justify-content: left;
+    display: flex;
+  }
+  mat-card-title{
+      justify-content: right;
+      display: flex;
+  }
+  mat-card-content,
+  mat-card-header {
+    display: flex;
+    justify-content: center;    
+  }
+  
+  .error {
+    padding: 16px;
+    width: 300px;
+    color: white;
+    background-color: red;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .my-profile-pick{
+    width: 200px;
+    height:200px;
+    border-radius: 100%;
+  }
